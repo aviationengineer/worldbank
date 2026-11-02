@@ -1,0 +1,2 @@
+[console_scripts]
+worldbank = worldbank_platform.cli.main:cli

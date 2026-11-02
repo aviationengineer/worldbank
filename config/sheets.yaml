@@ -1,0 +1,13 @@
+# Google Sheets layout for the "World Bank Data Intelligence" spreadsheet.
+spreadsheet_title: "World Bank Data Intelligence"
+worksheets:
+  01_Source_Catalog: [source_id, source_name, api_type, base_url, documentation_url, owner, description, refresh_frequency, status, last_run]
+  02_Country: [country_code, country_name, iso2, iso3, region, income_level, lending_type, capital, latitude, longitude]
+  03_Indicator_Catalog: [indicator_code, indicator_name, description, unit, source, source_organization, topic]
+  04_Indicators: [country_code, country_name, indicator_code, indicator_name, year, value, unit, source, ingestion_timestamp]
+  05_Projects: [project_id, project_name, country, region, status, approval_date, closing_date, commitment_amount, sector, theme, description]
+  06_Datasets: [dataset_id, dataset_name, description, publisher, last_updated, topic, resource_url]
+  07_Data_Quality: [run_id, dataset, record_count, null_count, duplicate_count, quality_score, validation_status, run_timestamp]
+  08_Ingestion_Log: [run_id, source, endpoint, start_time, end_time, records_extracted, records_loaded, status, error_message]
+  09_Data_Lineage: [dataset, source_api, endpoint, extraction_timestamp, transformation, destination]
+  10_Analytics: [country, gdp, gdp_growth, population, inflation, unemployment, gdp_per_capita]

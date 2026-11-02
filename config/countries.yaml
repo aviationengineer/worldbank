@@ -1,0 +1,11 @@
+# Country list: ISO3 codes. Add/remove without modifying Python.
+# Full list: https://api.worldbank.org/v2/country?format=json
+countries:
+  - CA  # Canada
+  - US  # United States
+  - GB  # United Kingdom
+  - AU  # Australia
+  - QA  # Qatar
+  - AE  # United Arab Emirates
+  - SA  # Saudi Arabia
+  - SG  # Singapore
