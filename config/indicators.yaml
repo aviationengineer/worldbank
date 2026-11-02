@@ -1,0 +1,20 @@
+# Indicator catalog: add codes here without modifying Python.
+# Codes: https://data.worldbank.org/indicator
+indicators:
+  NY.GDP.MKTP.CD: {name: "GDP (current US$)", unit: "US$", topic: "Economy"}
+  NY.GDP.PCAP.CD: {name: "GDP per capita (current US$)", unit: "US$", topic: "Economy"}
+  NY.GDP.MKTP.KD.ZG: {name: "GDP growth (annual %)", unit: "%", topic: "Economy"}
+  SP.POP.TOTL: {name: "Population, total", unit: "persons", topic: "Population"}
+  FP.CPI.TOTL.ZG: {name: "Inflation, consumer prices (annual %)", unit: "%", topic: "Prices"}
+  SL.UEM.TOTL.ZS: {name: "Unemployment, total (% of labor force)", unit: "%", topic: "Labor"}
+  NE.EXP.GNFS.CD: {name: "Exports of goods and services (current US$)", unit: "US$", topic: "Trade"}
+  NE.IMP.GNFS.CD: {name: "Imports of goods and services (current US$)", unit: "US$", topic: "Trade"}
+  EN.ATM.CO2E.KT: {name: "CO2 emissions (kt)", unit: "kt", topic: "Environment"}
+  EG.USE.PCAP.KG.OE: {name: "Energy use per capita (kg of oil equivalent)", unit: "kg oe", topic: "Energy"}
+  SH.XPD.CHEX.GD.ZS: {name: "Health expenditure (% of GDP)", unit: "%", topic: "Health"}
+  SE.ADT.LITR.ZS: {name: "Literacy rate, adult total (% 15+)", unit: "%", topic: "Education"}
+  AG.LND.AGRI.ZS: {name: "Agricultural land (% of land area)", unit: "%", topic: "Agriculture"}
+  ST.INT.ARVL: {name: "International tourism, arrivals", unit: "persons", topic: "Tourism"}
+  IT.NET.USER.ZS: {name: "Internet users (% of population)", unit: "%", topic: "Technology"}
+  GC.DOD.TOTL.GD.ZS: {name: "Central government debt (% of GDP)", unit: "%", topic: "Government"}
+  FB.AST.NPER.ZS: {name: "Bank nonperforming loans (% of gross loans)", unit: "%", topic: "Finance"}

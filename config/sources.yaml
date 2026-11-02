@@ -1,0 +1,57 @@
+# Source registry: every API the platform can ingest.
+# Add a new source here (and its connector) without touching Python code.
+sources:
+  worldbank_indicators:
+    connector: indicators
+    enabled: true
+    priority: P0
+    refresh: weekly
+    description: "World Development Indicators (country x indicator x year)"
+  worldbank_countries:
+    connector: countries
+    enabled: true
+    priority: P0
+    refresh: monthly
+    description: "Country reference data (dim_country)"
+  worldbank_projects:
+    connector: projects
+    enabled: false
+    priority: P1
+    refresh: weekly
+    description: "World Bank projects (Phase 2)"
+  worldbank_finance:
+    connector: finance
+    enabled: false
+    priority: P1
+    refresh: weekly
+    description: "World Bank financial data — loans/credits/grants (Phase 2)"
+  worldbank_poverty:
+    connector: poverty
+    enabled: false
+    priority: P2
+    refresh: monthly
+    description: "Poverty & Inequality Platform (Phase 2)"
+  worldbank_climate:
+    connector: climate
+    enabled: false
+    priority: P2
+    refresh: monthly
+    description: "Climate data (Phase 2)"
+  worldbank_documents:
+    connector: documents
+    enabled: false
+    priority: P3
+    refresh: monthly
+    description: "Documents & reports metadata (Phase 2, metadata only)"
+  worldbank_catalog:
+    connector: catalog
+    enabled: false
+    priority: P2
+    refresh: monthly
+    description: "World Bank Data Catalog (Phase 2)"
+  worldbank_sdmx:
+    connector: sdmx
+    enabled: false
+    priority: P3
+    refresh: monthly
+    description: "SDMX connector (Phase 2)"
