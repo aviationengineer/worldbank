@@ -1,0 +1,20 @@
+{
+  "worldbank_indicators::country/CA/indicator/NY.GDP.MKTP.CD": {
+    "source": "worldbank_indicators",
+    "endpoint": "country/CA/indicator/NY.GDP.MKTP.CD",
+    "last_successful_run": "2026-11-02T03:48:22.113830+00:00",
+    "last_record_date": null,
+    "last_page": 0,
+    "record_count": 26,
+    "checksum": null
+  },
+  "worldbank_countries::country": {
+    "source": "worldbank_countries",
+    "endpoint": "country",
+    "last_successful_run": "2026-11-02T03:48:24.508117+00:00",
+    "last_record_date": null,
+    "last_page": 0,
+    "record_count": 296,
+    "checksum": null
+  }
+}

@@ -1,0 +1,12 @@
+services:
+  worldbank:
+    build: .
+    env_file: .env
+    environment:
+      GOOGLE_SHEET_ID: ${GOOGLE_SHEET_ID}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./config:/app/config:ro
+      - ${GOOGLE_APPLICATION_CREDENTIALS:-/dev/null}:/secrets/service-account.json:ro
+    command: ["ingest", "--all"]

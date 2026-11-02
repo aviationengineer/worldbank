@@ -1,0 +1,61 @@
+# World Bank Data Platform — global settings.
+# Override any value with environment variables (see .env.example).
+
+worldbank:
+  base_url: "https://api.worldbank.org/v2"
+  timeout_seconds: 30
+  per_page: 1000
+
+date_range:
+  start: 2000
+  end: 2025
+
+countries:
+  - CA
+  - US
+  - GB
+  - AU
+  - QA
+  - AE
+  - SA
+  - SG
+
+http:
+  max_attempts: 4
+  backoff_base_seconds: 2.0
+  backoff_multiplier: 2.0
+  max_backoff_seconds: 60.0
+  respect_retry_after: true
+  max_workers: 4
+  # ca_bundle: /path/to/ca-bundle.pem  # corporate MITM proxies
+
+storage:
+  base_dir: "data"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  analytics_dir: "data/analytics"
+  cache_ttl_seconds: 86400
+
+quality:
+  # weights for the composite quality score (must sum to 1.0)
+  weights:
+    completeness: 0.30
+    uniqueness: 0.20
+    validity: 0.20
+    consistency: 0.20
+    freshness: 0.10
+  min_quality_score: 0.70
+  flag_negative_gdp: true
+  flag_negative_population: true
+  inflation_abs_limit: 1000.0
+
+sheets:
+  # Set via GOOGLE_SHEET_ID env var or --spreadsheet flag; empty = skip publishing.
+  spreadsheet_id: ""
+  # 'service_account' (gspread, enterprise) or 'connector' (hatch_gws_cli, local dev)
+  auth_mode: "connector"
+
+logging:
+  level: "INFO"
+  structured: true
+  dir: "logs"
